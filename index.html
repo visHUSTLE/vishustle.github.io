@@ -1,49 +1,141 @@
 <!DOCTYPE html>
-<link rel="stylesheet" href="style.css">
-<header>
-	<h1>Vishnu Nandyala</h1>
-</header>
-<main>
-	<img class="profile-pic" src="IMG_1557.JPG" alt="My Profile Picture">
-	<h2>Generalist Software Engineer | I delete code more than I write</h2>
-	
-	<ul>
-		<!-- <li>Name: Vishnu Nandyala</li> -->
-		<li>LinkedIn: <a href="https://www.linkedin.com/in/vishnunandyala/">Vishnu Nandyala</a></li>
-		<li>Email: <a href="mailto:vishnuraju15@gmail.com">vishnuraju15@gmail.com</a></li>
-		<li>I am language agnostic and passionate about working on Distributed Systems and Backend Infrastructure</li>
-	</ul>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Vishnu Nandyala</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<nav class="navigation">
+		<div class="nav-container">
+			<a href="#home" class="nav-link active" onclick="showSection('home')">Home</a>
+			<a href="#writing" class="nav-link" onclick="showSection('writing')">Writing</a>
+			<a href="#reading" class="nav-link" onclick="showSection('reading')">Reading</a>
+			<a href="#inspiration" class="nav-link" onclick="showSection('inspiration')">Inspiration</a>
+		</div>
+	</nav>
 
-	<h2>I will post more details here soon</h2>
-	
-	<ul class="projects">
-		<li>
-			<h3><a href="https://devpost.com/software/textwiz">TextWiz <span class="arrow">&rarr;</span></a></h3>
-			<ul>
-				<li>Won “Best use of Google cloud vision API” award at the 2000 Person Hackathon</li>
-				<li>Application which can scan long reading texts and gives out an organised summary along with visuals</li>
-				<li>Created a REST API for the Machine Learning model.</li>
-			</ul>
-			
-		</li>
-		<li>
-			<h3><a href="https://devpost.com/software/real-time-data-analysis-of-social-media-posts">CrowdMotions <span class="arrow">&rarr;</span></a></h3>
-			<ul>
-				<li>Created real time Twitter monitoring system using Python to track customer behavior for JetBlue airlines</li>
-				<li>Won 2nd place and $250 for best customer feedback hack built in 24 hours out of 35 submitted projects.</li>
+	<main>
+		<!-- Home Section -->
+		<div id="home" class="section active">
+			<div class="container">
+				<img class="profile-pic" src="MyImage.jpg" alt="Vishnu Nandyala">
 				
-			</ul>
-			
-		</li>
-		<li>
-			<h3>Azure Cloud and Large Dataset Computation</h3>
-			<ul>
-				<li>Implemented K-means Clustering in Python on titanic dataset and deployed on Azure Cloud.</li>
-				<li>Improved the data access speed by 25% using Azure Redis Cache.</li>
+				<h1>Vishnu Nandyala</h1>
+				<p class="subtitle">building harmless great things using AI</p>
 				
-			</ul>
+				<div class="about-section">
+					<h2>About me</h2>
+					<ul class="about-list">
+						<li>Engineer</li>
+						<li>AGI pilled</li>
+						<li>I'm a Tifosi <span class="ferrari-logo">🏎️</span></li>
+						<li>SF is ❤️</li>
+					</ul>
+				</div>
+				
+				<div class="social-links">
+					<a href="https://www.linkedin.com/in/vishnunandyala/" target="_blank">LinkedIn</a>
+					<a href="https://x.com/vishustle" target="_blank">Twitter</a>
+					<a href="https://github.com/visHUSTLE" target="_blank">GitHub</a>
+					<a href="https://devpost.com/visHUSTLE" target="_blank">Hackathons</a>
+				</div>
+			</div>
+		</div>
+
+		<!-- Writing Section -->
+		<div id="writing" class="section">
+			<div class="container">
+				<h1>Writing</h1>
+				<p class="section-intro">Content coming soon...</p>
+			</div>
+		</div>
+
+		<!-- Reading Section -->
+		<div id="reading" class="section">
+			<div class="container">
+				<h1>Reading</h1>
+				
+				<div class="reading-section">
+					<div class="reading-category">
+						<h3>Currently reading</h3>
+						<ul class="reading-list">
+							<li><a href="https://www.amazon.com/Hatching-Twitter-Story-Friendship-Betrayal/dp/1591847087" target="_blank">Hatching Twitter</a> by Nick Bilton</li>
+							<li><a href="https://www.amazon.com/Wheres-My-Flying-Car-Future/dp/1732265138" target="_blank">Where's My Flying Car?</a> by J. Storrs Hall</li>
+						</ul>
+					</div>
+					
+					<div class="reading-category">
+						<h3>Next in line</h3>
+						<ul class="reading-list">
+							<li><a href="https://www.amazon.com/Scaling-Excellence-Getting-More-Less/dp/0385347022" target="_blank">Scaling Era</a> by Dwarakesh Patel</li>
+						</ul>
+					</div>
+					
+					<div class="reading-category">
+						<h3>Read</h3>
+						<ul class="reading-list">
+							<li><a href="https://www.amazon.com/Elon-Musk-Walter-Isaacson/dp/1982181281" target="_blank">Elon Musk</a> by Walter Isaacson</li>
+							<li><a href="https://www.amazon.com/Hillbilly-Elegy-Memoir-Family-Culture/dp/0062300547" target="_blank">Hillbilly Elegy</a> by JD Vance</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Inspiration Section -->
+		<div id="inspiration" class="section">
+			<div class="container">
+				<p class="section-intro">A photo that I keep coming back to build my resilience</p>
+				
+				<div class="inspiration-photo-container">
+					<div class="photo-caption">
+						<span class="caption-date">MAR 24, 2006</span>
+						<span class="caption-divider">|</span>
+						<span class="caption-time">16:30 PST</span>
+						<span class="caption-divider">|</span>
+						<span class="caption-location">SpaceX HQ, Hawthorne</span>
+						<span class="caption-divider">|</span>
+						<span class="caption-person">Elon Musk</span>
+					</div>
+					<img src="elon-spacex.jpeg" alt="Elon Musk at SpaceX factory after Falcon 1 failure" class="inspiration-photo">
+					
+					<div class="technical-context">
+						<h3>Falcon 1 Flight 1 - Mission Failure Analysis</h3>
+						<div class="failure-details">
+							<p><strong>T+33 seconds:</strong> Catastrophic engine failure</p>
+							<p><strong>Root Cause:</strong> Corroded aluminum B-nut on fuel line caused by salt spray exposure during pre-launch operations at Omelek Island</p>
+							<p><strong>Failure Mode:</strong> The corroded nut failed under pressure, causing a fuel leak that ignited. Fire severed the main engine controller cable, leading to loss of thrust vector control</p>
+							<p><strong>Impact:</strong> Vehicle lost attitude control and crashed into the Pacific Ocean approximately 250 feet from the launch pad</p>
+							<p><strong>Aftermath:</strong> SpaceX had $100M remaining. Two more failures followed (2007, 2008) before the fourth attempt succeeded in September 2008, saving the company</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<script>
+		// Navigation functionality
+		function showSection(sectionId) {
+			// Hide all sections
+			document.querySelectorAll('.section').forEach(section => {
+				section.classList.remove('active');
+			});
 			
-		</li>
-	</ul>
-</main>
+			// Remove active class from all nav links
+			document.querySelectorAll('.nav-link').forEach(link => {
+				link.classList.remove('active');
+			});
+			
+			// Show selected section
+			document.getElementById(sectionId).classList.add('active');
+			
+			// Add active class to clicked nav link
+			event.target.classList.add('active');
+		}
+	</script>
+</body>
+</html>
 
